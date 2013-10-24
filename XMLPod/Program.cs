@@ -32,6 +32,7 @@ namespace XMLPod
   .Elements("item")
   .Where(x =>
              {
+
                  var ss = (string)x.Element(itunes + "duration");
                  TimeSpan ts ;
                  if (TimeSpan.TryParse(ss, out ts))
